@@ -7,9 +7,9 @@ NSA EQG泄漏的飞塔防火墙溢出工具设置太复杂，自己写的一个�
 - 自动判断协议是SSL还是HTTP以及端口
 # Usage
 ````
-git clone https://github.com/killerhack/Fortigate-autopwn
-chmod 775 fortinet_autopwn.py egregiousblunder_3.0.0.1
-fortinet_autopwn.py http(s)://target_ip:port
+$ git clone https://github.com/killerhack/Fortigate-autopwn
+$ chmod 775 fortinet_autopwn.py egregiousblunder_3.0.0.1
+$ fortinet_autopwn.py http(s)://target_ip:port
 ````
 # 依赖库
 - subprocess
