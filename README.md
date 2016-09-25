@@ -16,3 +16,5 @@ fortinet_autopwn.py http(s)://target_ip:port
 - requests
 - shlex
 如果提示import error请pip install该模块
+#说明
+其中的文件全部是NSA Equtation group原版，除过CONF文件中修改了NOSERVER以及NOCLIENT的路径。
