@@ -41,7 +41,7 @@ if __name__ == '__main__':
     else:
         port = '80'
     etag = etaginfo.split('_')[-1]
-        with open('EGBL.conf', 'r') as conf:
+    with open('EGBL.conf', 'r') as conf:
         for line in conf:
             if line.startswith('#'):
                 pass
